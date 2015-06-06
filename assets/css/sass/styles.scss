@@ -1,10 +1,11 @@
-
+/* Remember to init: sass --watch sass:. --sourcemap=none -C --style expanded --compass */
+@import "compass/css3.scss";
 /* Colors
 --------------*/
 
 /* Fonts
 --------------*/
 
-
-@import 'base';
-@import 'new';
+#test-header{
+	text-align: center;
+} 

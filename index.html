@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="websiteApp">
 <head>
-	<title>Test</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript">
-		
-	</script>
+	<title>Home</title>
+		<!-- STYLES -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+		<!-- SCRIPTS -->
+	<!-- Angular -->
+	<script src="assets/libs/angular.min.js"></script>
+	<!-- Angular-Route -->
+	<script src="assets/libs/angular-ui-router.min.js"></script>
+
+	<!-- app -->
+	<script src="app/app.js"></script>
+
 </head>
 <body>
-	<p>test</p>
-	<div>test2</div>
-	<div>test3</div>
-	<div>test4</div>
-	<div>test5</div>
-	<div>test6</div>
+	<div ui-view></div>
 </body>
 </html>
