@@ -1,8 +1,5 @@
-/* Remember to init: sass --watch sass:. --sourcemap=none -C --style expanded --compass */
 /* Colors
 --------------*/
 /* Fonts
 --------------*/
-#test-header {
-  text-align: center;
-}
+#test-header { text-align: left; }
