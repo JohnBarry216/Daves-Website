@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="websiteApp">
+<html lang="en">
 <head>
 	<title>Home</title>
 		<!-- STYLES -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- app styling -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 		<!-- SCRIPTS -->
@@ -15,7 +18,9 @@
 	<script src="app/app.js"></script>
 
 </head>
-<body>
+<body ng-app="websiteApp">
+	<div ng-include="'app/views/includes/header.html'" />
 	<div ui-view></div>
+	
 </body>
 </html>
