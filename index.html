@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="websiteApp">
 <head>
+	<base href="/Daves-Website/">
+
 	<title>Home</title>
+	
 		<!-- STYLES -->
-	<!-- bootstrap -->
+
+	<!-- BootStrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- app styling -->
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<!-- <link rel="stylesheet" href="carousel.css"> -->
 
-		<!-- SCRIPTS -->
-	<!-- Angular -->
-	<script src="assets/libs/angular.min.js"></script>
-	<!-- Angular-Route -->
-	<script src="assets/libs/angular-ui-router.min.js"></script>
+
+
+
+</head>
+<body>
+	<div ng-include="'app/views/includes/nav.html'"></div>
+	<div class="container">
+		<div ui-view></div>
+	</div>
+
+
+
+			<!-- SCRIPTS -->
+
+	<script src="assets/libs/angular.min.js"></script>            <!-- Angular -->
+	<script src="assets/libs/angular-ui-router.min.js"></script>  <!-- Angular-Route -->
+	<script src="assets/libs/jquery.min.js"></script>             <!-- jQuery -->
+	<script src="assets/libs/jquery-ui.min.js"></script>          <!-- jQuery-ui -->
+	<script src="assets/libs/bootstrap.min.js"></script>          <!-- BootStrap -->
 
 	<!-- app -->
 	<script src="app/app.js"></script>
 
-</head>
-<body ng-app="websiteApp">
-	<div ng-include="'app/views/includes/header.html'" />
-	<div ui-view></div>
-	
 </body>
 </html>

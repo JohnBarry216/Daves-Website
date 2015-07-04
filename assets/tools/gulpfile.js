@@ -1,14 +1,17 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
- 
+var sass = require('gulp-ruby-sass');
+
 gulp.task('sass', function () {
-  gulp.src('../css/sass/**/*.scss')
-    .pipe(sass({outputStyle: 'compact'}))
-    .pipe(gulp.dest('../css'));
+  	return sass('../css/sass', {
+		compass: true,
+		style: 'expanded'
+	})
+	    .pipe(gulp.dest('../css'));
 });
  
 
 
 gulp.task('default', function () {
-  gulp.watch('../css/sass/**/*.scss', ['sass']);
+	gulp.start('sass');
+ 	gulp.watch('../css/sass/**/*.scss', ['sass']);
 });

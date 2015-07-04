@@ -1,0 +1,24 @@
+{
+  "name": "Daves-Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "../../index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnBarry216/Daves-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBarry216/Daves-Website/issues"
+  },
+  "homepage": "https://github.com/JohnBarry216/Daves-Website",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-ruby-sass": "^1.0.5"
+  }
+}

@@ -5,7 +5,13 @@
 */
 var app = angular.module('websiteApp', ['ui.router']);
 
-app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+app.run(function($templateCache, $http){
+	
+	//pre cache phone page
+	$http.get('app/views/phone.html', {cache:$templateCache});
+});
+
+app.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function($urlRouterProvider, $stateProvider, $locationProvider) {
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
@@ -18,4 +24,5 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 			templateUrl: 'app/views/phone.html'
 		});
 
+	$locationProvider.html5Mode(true);
 }]);
