@@ -18,7 +18,10 @@
   "homepage": "https://github.com/JohnBarry216/Daves-Website",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-ruby-sass": "^1.0.5"
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-uglify": "^1.2.0"
   }
 }

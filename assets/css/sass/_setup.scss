@@ -1,5 +1,22 @@
 @import 'variables/variables';
 
-body, html{
+/* EXTEND ELEMET DEFINITIONS
+********************/
+body, html {
 	background-color: $bodyColor;
+}
+
+img {
+	display: block;
+}
+
+
+/* GENERAL CLASSES
+********************/
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
 }

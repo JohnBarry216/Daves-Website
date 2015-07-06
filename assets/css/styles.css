@@ -1,10 +1,53 @@
+/* EXTEND ELEMET DEFINITIONS
+********************/
 body, html {
   background-color: #f1f1f1;
 }
 
+img {
+  display: block;
+}
+
+/* GENERAL CLASSES
+********************/
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 #nav-container nav {
-  margin-top: 20px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+
+#slideshow-box {
+  height: 349px;
+  margin: 0 auto;
+  position: relative;
+  /* only show slide if we're in desktop view */
+}
+@media screen and (max-width: 992px) {
+  #slideshow-box {
+    display: none;
+  }
+}
+
+#header-img-holder {
+  margin: 0 auto 5px auto;
+  /* change header image depending on size */
+  height: 75px;
+  width: 551.7482px;
+  background-image: url("../img/header - desktop.jpg");
+  background-size: 551.7482px 75px;
+  background-repeat: no-repeat;
+  /* change header image depending on size */
+}
+@media screen and (max-width: 768px) {
+  #header-img-holder {
+    display: none;
+  }
 }

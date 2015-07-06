@@ -9,15 +9,19 @@ app.run(function($templateCache, $http){
 	
 	//pre cache phone page
 	$http.get('app/views/phone.html', {cache:$templateCache});
+
+	$http.get('app/views/home.html', {cache:$templateCache});
+
 });
 
-app.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function($urlRouterProvider, $stateProvider, $locationProvider) {
+app.config(function($urlRouterProvider, $stateProvider, $locationProvider) {
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
 		.state('home', {
 			url: '/',
-			templateUrl: 'app/views/home.html'
+			templateUrl: 'app/views/home.html',
+			controller: 'homeCtrl'
 		})
 		.state('phone', {
 			url: '/phone',
@@ -25,4 +29,4 @@ app.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', functio
 		});
 
 	$locationProvider.html5Mode(true);
-}]);
+});

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="websiteApp">
 <head>
-	<base href="/Daves-Website/">
+	<base href="/">
 
 	<title>Home</title>
 	
@@ -18,6 +18,7 @@
 
 </head>
 <body>
+	<div ng-include="'app/views/includes/header.html'"></div>
 	<div ng-include="'app/views/includes/nav.html'"></div>
 	<div class="container">
 		<div ui-view></div>
@@ -32,9 +33,14 @@
 	<script src="assets/libs/jquery.min.js"></script>             <!-- jQuery -->
 	<script src="assets/libs/jquery-ui.min.js"></script>          <!-- jQuery-ui -->
 	<script src="assets/libs/bootstrap.min.js"></script>          <!-- BootStrap -->
+	<!-- Jssor | Slideshow plugin -->
+	<script src="assets/libs/jssor.js"></script>
+	<script src="assets/libs/jssor.slider.js"></script>
+
+	<!-- <script src="assets/libs/libraries.js"></script>  all libraries not sure if this is better yet-->
 
 	<!-- app -->
-	<script src="app/app.js"></script>
+	<script src="app/app.min.js"></script>
 
 </body>
 </html>

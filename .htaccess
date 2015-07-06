@@ -11,5 +11,5 @@ RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule .? - [L]
 
 # Rewrite all other queries to the front controller.
-RewriteRule .? %{ENV:BASE}/Daves-Website/index.html [L]
+RewriteRule .? %{ENV:BASE}/index.html [L]
 </IfModule>
