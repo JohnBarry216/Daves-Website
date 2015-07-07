@@ -1,16 +1,10 @@
 #header-img-holder {
 	margin: 0 auto 5px auto;
-
-
-	/* change header image depending on size */
-	// @media screen and (min-width: $phone_width) {
-		height: 75px;
-		width: 551.7482px;
-
-		background-image: url('../img/header - desktop.jpg');
-		background-size: 551.7482px 75px;
-		background-repeat: no-repeat;
-	// }
+	height: 75px;
+	width: 551.7482px;
+	background-image: url('../img/headerW - desktop.jpg');
+	background-size: 551.7482px 75px;
+	background-repeat: no-repeat;
 
 	/* change header image depending on size */
 	@media screen and (max-width: $phone_width) {

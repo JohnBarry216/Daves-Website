@@ -1,11 +1,11 @@
 /* EXTEND ELEMET DEFINITIONS
 ********************/
-body, html {
-  background-color: #f1f1f1;
-}
-
 img {
   display: block;
+}
+
+hr {
+  margin-top: 100px;
 }
 
 /* GENERAL CLASSES
@@ -16,12 +16,6 @@ img {
 
 .bold {
   font-weight: bold;
-}
-
-#nav-container nav {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
 }
 
 #slideshow-box {
@@ -38,10 +32,9 @@ img {
 
 #header-img-holder {
   margin: 0 auto 5px auto;
-  /* change header image depending on size */
   height: 75px;
   width: 551.7482px;
-  background-image: url("../img/header - desktop.jpg");
+  background-image: url("../img/headerW - desktop.jpg");
   background-size: 551.7482px 75px;
   background-repeat: no-repeat;
   /* change header image depending on size */
@@ -50,4 +43,13 @@ img {
   #header-img-holder {
     display: none;
   }
+}
+
+.slideshow-area {
+  height: 300px;
+  width: 100%;
+}
+.slideshow-area .slideshow-list {
+  font-size: 24px;
+  list-style-type: none;
 }
