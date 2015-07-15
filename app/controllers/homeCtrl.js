@@ -1,9 +1,9 @@
-app.controller('homeCtrl', ['$scope', function($scope){
+app.controller('homeCtrl', function($scope){
 	$scope.title = 'Home';
 
 
 	
-}]);
+});
 
 
 

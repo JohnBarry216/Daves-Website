@@ -8,6 +8,10 @@ hr {
   margin-top: 100px;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* GENERAL CLASSES
 ********************/
 .center {
@@ -18,16 +22,29 @@ hr {
   font-weight: bold;
 }
 
-#slideshow-box {
-  height: 349px;
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+#slideshow-area {
+  min-height: 349px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 50px;
   /* only show slide if we're in desktop view */
 }
 @media screen and (max-width: 992px) {
-  #slideshow-box {
+  #slideshow-area {
     display: none;
   }
+}
+
+.banner-image {
+  margin-right: 20px;
 }
 
 #header-img-holder {

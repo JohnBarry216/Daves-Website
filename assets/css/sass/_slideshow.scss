@@ -1,11 +1,16 @@
 
-#slideshow-box{
-	height: 349px;
+#slideshow-area{
+	min-height: 349px;
 	margin: 0 auto;
 	position: relative;
-
+	margin-bottom: 50px;
+	
 	/* only show slide if we're in desktop view */
 	@media screen and (max-width: $tablet_width) {
 		display: none;
 	}
+}
+
+.banner-image {
+	margin-right: 20px;
 }

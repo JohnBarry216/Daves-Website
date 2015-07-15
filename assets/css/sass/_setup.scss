@@ -10,6 +10,10 @@ hr {
 	margin-top: 100px;
 }
 
+a {
+	cursor: pointer;
+}
+
 /* GENERAL CLASSES
 ********************/
 .center {
@@ -18,4 +22,12 @@ hr {
 
 .bold {
 	font-weight: bold;
+}
+
+.fleft { 
+	float: left;
+}
+
+.fright {
+	float: right;
 }
