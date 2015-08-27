@@ -26,6 +26,11 @@ app.config(function($urlRouterProvider, $stateProvider, $locationProvider) {
 			url: '/about',
 			templateUrl: 'app/views/about.html',
 			controller: 'aboutCtrl'
+		})
+		.state('contact', {
+			url: '/contact',
+			templateUrl: 'app/views/contact.html',
+			controller: 'contactCtrl'
 		});
 
 	$locationProvider.html5Mode(true);
