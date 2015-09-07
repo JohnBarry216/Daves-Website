@@ -7,9 +7,11 @@ var app = angular.module('websiteApp', ['ui.router']);
 
 app.run(function($templateCache, $http){
 	
-	//pre cache about page
+	//pre cache pages
 	$http.get('app/views/about.html', {cache:$templateCache});
 	$http.get('app/views/home.html', {cache:$templateCache});
+	$http.get('app/views/services.html', {cache:$templateCache});
+	$http.get('app/views/contact.html', {cache:$templateCache});
 
 });
 
@@ -21,6 +23,11 @@ app.config(function($urlRouterProvider, $stateProvider, $locationProvider) {
 			url: '/',
 			templateUrl: 'app/views/home.html',
 			controller: 'homeCtrl'
+		})
+		.state('services', {
+			url: '/services',
+			templateUrl: 'app/views/services.html',
+			controller: 'servicesCtrl'
 		})
 		.state('about', {
 			url: '/about',

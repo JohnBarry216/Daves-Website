@@ -1,7 +1,7 @@
 /* EXTEND ELEMET DEFINITIONS
 ********************/
 img {
-  display: block;
+  /*display: block;*/
 }
 
 hr {
@@ -69,4 +69,12 @@ a {
 .slideshow-area .slideshow-list {
   font-size: 24px;
   list-style-type: none;
+}
+
+.carousel-img {
+  border-radius: 15%;
+  border: 3.5px solid lightblue;
+  width: 250px;
+  height: 175px;
+  margin-right: 5px;
 }
