@@ -30,21 +30,10 @@ a {
   float: right;
 }
 
-#slideshow-area {
-  min-height: 349px;
-  margin: 0 auto;
-  position: relative;
-  margin-bottom: 50px;
-  /* only show slide if we're in desktop view */
-}
-@media screen and (max-width: 992px) {
-  #slideshow-area {
-    display: none;
-  }
-}
-
-.banner-image {
-  margin-right: 20px;
+/* ALTER PREDEFINED BOOSTRAP CLASSES
+********************/
+.navbar {
+  /*margin-bottom: 0px;*/
 }
 
 #header-img-holder {
@@ -62,13 +51,28 @@ a {
   }
 }
 
-.slideshow-area {
+#slideshow-area {
   height: 300px;
   width: 100%;
+  /* only show slide if we're in desktop view */
 }
-.slideshow-area .slideshow-list {
+#slideshow-area .banner-image {
+  margin: 0px 20px 0px 20px;
+}
+#slideshow-area .slideshow-list {
   font-size: 24px;
   list-style-type: none;
+}
+#slideshow-area .slideshow-text {
+  font-size: 20px;
+  padding-top: 30px;
+  height: 100%;
+  margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  #slideshow-area {
+    display: none;
+  }
 }
 
 .carousel-img {

@@ -1,10 +1,27 @@
-.slideshow-area {
+#slideshow-area {
 	height: 300px;
 	width: 100%;
+	
+	
+	.banner-image {
+		margin: 0px 20px 0px 20px;
+	}
 
 	.slideshow-list {
 		font-size: 24px;
 		list-style-type: none;
+	}
+
+	.slideshow-text {
+		font-size: 20px;
+		padding-top: 30px;
+		height: 100%;
+		margin-right: 20px;
+	}
+
+	/* only show slide if we're in desktop view */
+	@media screen and (max-width: $tablet_width) {
+		display: none;
 	}
 }
 
