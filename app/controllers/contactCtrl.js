@@ -1,7 +1,8 @@
-app.controller('contactCtrl', function($scope){
+app.controller('contactCtrl', function($scope, MailFactory){
 
 	//on form submit
-	$('#contactForm').submit(function() {
-		alert('hi');
-	});
+	$scope.sendEmail = function() {
+		console.log($scope.fields);
+		MailFactory.test('me');
+	}
 });

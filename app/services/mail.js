@@ -58,6 +58,9 @@ app.factory('MailFactory', function(mailingInfo){
 
 	// make functions public
 	return {
-		send: sendMail
+		send: sendMail,
+		test: function(message) {
+			alert(message);
+		}
 	};
 });
