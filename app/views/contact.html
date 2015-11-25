@@ -1,18 +1,33 @@
-<div class="container" ng-controller="contactCtrl">
+<div class="container">
 	<form id="contactForm" role="form">
 		<div class="form-group">
-			<label for="email">Your Email address:</label>
-			<input type="email" class="form-control" ng-model="fields.email">
+			<label for="email">Your Email:</label>
+			<input type="text" class="form-control" id="email" ng-model="fields.email">
 		</div>
 		<div class="form-group">
 			<label for="subject">Subject:</label>
-			<input type="text" class="form-control" ng-model="fields.subject">
+			<input type="text" class="form-control" id="subject" ng-model="fields.subject">
 		</div>
 		<div class="form-group">
-			<label for="content">Message:</label>
-			<textarea ng-model="fields.content" class="form-control" cols="30" rows="10"></textarea>
+			<label for="messageBody">Message:</label>
+			<textarea ng-model="fields.messageBody" id="messageBody" class="form-control" cols="30" rows="10"></textarea>
 		</div>
 
-		<button ng-click="sendEmail()" class="btn btn-default">Submit</button>
+		<button  ng-click="sendEmail()" class="btn btn-default">Submit</button>
 	</form>
+</div>
+
+<div id="mailModal" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header"> 
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+				<h4 class="modal-title" id="mySmallModalLabel">Please Authenticate</h4>
+			</div>
+			<div class="model-body">
+				<div class="g-recaptcha" data-sitekey="6LcCuBETAAAAAEXINJCDM5FbDv17CrgNeQ_yOoeJ"></div>
+				<div id="mailLoading" class="hide"></div>
+			</div>
+		</div>
+	</div>
 </div>

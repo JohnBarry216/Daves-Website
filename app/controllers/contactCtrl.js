@@ -1,8 +1,16 @@
-app.controller('contactCtrl', function($scope, MailFactory){
+app.controller('contactCtrl', function($scope, mailFactory){
 
 	//on form submit
 	$scope.sendEmail = function() {
-		console.log($scope.fields);
-		MailFactory.test('me');
+
+		$('#mailModal').modal('show');
+
+		mailFactory.sendMail($scope.fields).then(function(data) {
+			console.log(data);
+		}, function(data) {
+			console.log('s');
+			console.log(data);
+		});
+
 	}
-});
+}); 
