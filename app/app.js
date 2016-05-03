@@ -10,7 +10,8 @@ app.run(function($templateCache, $http){
 	//pre cache pages
 	$http.get('app/views/about.html', {cache:$templateCache});
 	$http.get('app/views/home.html', {cache:$templateCache});
-	$http.get('app/views/services.html', {cache:$templateCache});
+	$http.get('app/views/home-services.html', {cache:$templateCache});
+	$http.get('app/views/company-services.html', {cache:$templateCache});
 	$http.get('app/views/contact.html', {cache:$templateCache});
 
 });
@@ -24,9 +25,15 @@ app.config(function($urlRouterProvider, $stateProvider, $locationProvider) {
 			templateUrl: 'app/views/home.html',
 			controller: 'homeCtrl'
 		})
-		.state('services', {
-			url: '/services',
-			templateUrl: 'app/views/services.html',
+		.state('home-services', {
+			url: '/home-services',
+			templateUrl: 'app/views/home-services.html',
+			controller: 'servicesCtrl'
+		})
+
+		.state('company-services', {
+			url: '/company-services',
+			templateUrl: 'app/views/company-services.html',
 			controller: 'servicesCtrl'
 		})
 		.state('about', {

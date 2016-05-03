@@ -83,11 +83,30 @@ a {
   margin-right: 5px;
 }
 
+.carousel-img-large {
+  border-radius: 15%;
+  border: 3.5px solid lightblue;
+  width: 350px;
+  height: 245px;
+  margin-right: 5px;
+}
+
+.carousel-img-tall {
+  border-radius: 15%;
+  border: 3.5px solid lightblue;
+  width: 350px;
+  height: 600px;
+  margin-right: 5px;
+}
+
 #mailLoading {
   margin: 0 auto 5px auto;
   height: 15px;
   width: 128px;
   background-image: url("../img/animations/sending_mail.gif");
-  /*background-size: 551.7482px 75px;*/
   background-repeat: no-repeat;
+}
+
+.name-headers {
+  text-decoration: underline;
 }

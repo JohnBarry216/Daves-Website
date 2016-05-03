@@ -7,12 +7,12 @@
 		margin: 0px 20px 0px 20px;
 	}
 
-	.slideshow-list {
+	.slideshow-list { 
 		font-size: 24px;
 		list-style-type: none;
 	}
 
-	.slideshow-text {
+	.slideshow-text { 
 		font-size: 20px;
 		padding-top: 30px;
 		height: 100%;
@@ -30,5 +30,21 @@
 	border: 3.5px solid lightblue;
 	width: 250px;
 	height: 175px;
+	margin-right: 5px;
+}
+
+.carousel-img-large {
+	border-radius: 15%;
+	border: 3.5px solid lightblue;
+	width: 350px;
+	height: 245px;
+	margin-right: 5px;
+}
+
+.carousel-img-tall {
+	border-radius: 15%;
+	border: 3.5px solid lightblue;
+	width: 350px;
+	height: 600px;
 	margin-right: 5px;
 }
