@@ -38,23 +38,22 @@ a {
 
 #header-img-holder {
   margin: 0 auto 5px auto;
-  height: 75px;
-  width: 551.7482px;
-  background-image: url("../img/headerW - desktop.jpg");
-  background-size: 551.7482px 75px;
+  height: 135px;
+  width: 450px;
+  background-image: url("../img/Pictures/Logo/Pinnow1_3_2.jpg");
+  /*background-image: url('../img/headerW - desktop.jpg');*/
+  background-size: 450px 135px;
   background-repeat: no-repeat;
   /* change header image depending on size */
-}
-@media screen and (max-width: 768px) {
-  #header-img-holder {
-    display: none;
-  }
 }
 
 #slideshow-area {
   height: 300px;
   width: 100%;
   /* only show slide if we're in desktop view */
+  /*	@media screen and (max-width: $tablet_width) {
+  		display: none;
+  	}*/
 }
 #slideshow-area .banner-image {
   margin: 0px 20px 0px 20px;
@@ -68,11 +67,6 @@ a {
   padding-top: 30px;
   height: 100%;
   margin-right: 20px;
-}
-@media screen and (max-width: 992px) {
-  #slideshow-area {
-    display: none;
-  }
 }
 
 .carousel-img {

@@ -1,13 +1,12 @@
 #header-img-holder {
 	margin: 0 auto 5px auto;
-	height: 75px;
-	width: 551.7482px;
-	background-image: url('../img/headerW - desktop.jpg');
-	background-size: 551.7482px 75px;
+	height: 135px;
+	width: 450px;
+	background-image: url('../img/Pictures/Logo/Pinnow1_3_2.jpg');
+	/*background-image: url('../img/headerW - desktop.jpg');*/
+	background-size: 450px 135px;
 	background-repeat: no-repeat;
 
 	/* change header image depending on size */
-	@media screen and (max-width: $phone_width) {
-		display:none;
-	}
-}
+
+} 
